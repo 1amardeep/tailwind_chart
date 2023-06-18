@@ -109,7 +109,9 @@
 
         <!-- site bannar end -->
         <!-- card container start -->
-        <div class="card-container m-7 flex flex-col md:flex-row md:space-x-6">
+        <div
+          class="card-container m-7 flex flex-col md:flex-row space-y-6 md:space-x-6"
+        >
           <div class="bg-white max-w-full md:w-1/2 p-4">
             <div>
               <img src="./images/wallet.png" alt="" class="h-10 w-10" />
@@ -144,7 +146,9 @@
         <!-- card container end -->
 
         <!-- card container start -->
-        <div class="card-container m-7 flex flex-col md:flex-row md:space-x-6">
+        <div
+          class="card-container m-7 flex flex-col md:flex-row space-y-6 md:space-x-6"
+        >
           <div class="bg-white max-w-full md:w-1/2 p-4">
             <div>
               <img src="./images/wallet.png" alt="" class="h-10 w-10" />
@@ -179,7 +183,9 @@
         <!-- card container end -->
 
         <!-- card container start -->
-        <div class="card-container m-7 flex flex-col md:flex-row md:space-x-6">
+        <div
+          class="card-container m-7 flex flex-col md:flex-row space-y-6 md:space-x-6"
+        >
           <div
             class="bg-white max-w-full md:w-1/3 p-4 divide-y divide-gray-200"
           >
@@ -188,87 +194,93 @@
               <canvas id="chart5" class="pt-4"></canvas>
             </div>
           </div>
-          <div class="bg-white max-w-full md:w-2/3 p-4">
+          <di class="bg-white max-w-full md:w-2/3 p-4">
             <div class="text-gray-500 font-bold py-2">Top Channels</div>
-            <div
-              class="flex bg-gray-100 p-2 uppercase font-bold text-xs text-gray-500"
-            >
-              <div class="w-1/4">
-                <div>Source</div>
-              </div>
-              <div class="w-3/4 flex space-x-20">
-                <div>Visitors</div>
-                <div>Revenues</div>
-                <div>Sales</div>
-                <div>Conversions</div>
-              </div>
-            </div>
-            <div class="multi-channnal divide-y divide-gray-200">
-              <div class="flex p-2 text-xs text-gray-500 single-channal">
-                <div class="w-1/4">
-                  <div>
-                    <div class="image-text flex items-center space-x-2">
-                      <img src="./images/youtube.png" class="h-7 w-7" />
-                      <div>YouTube</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-3/4 flex space-x-20">
-                  <div class="w-1/4">3.4k</div>
-                  <div class="w-1/4 text-green-500">$3,450</div>
-                  <div class="w-1/4">340</div>
-                  <div class="w-1/4 text-blue-500">4.9%</div>
-                </div>
-              </div>
-              <div class="flex p-2 text-xs text-gray-500 single-channal">
-                <div class="w-1/4">
-                  <div>
-                    <div class="image-text flex items-center space-x-2">
-                      <img src="./images/instagram.png" class="h-7 w-7" />
-                      <div>instagram</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-3/4 flex space-x-20">
-                  <div class="w-1/4">3.4k</div>
-                  <div class="w-1/4 text-green-500">$3,450</div>
-                  <div class="w-1/4">340</div>
-                  <div class="w-1/4 text-blue-500">4.9%</div>
-                </div>
-              </div>
-              <div class="flex p-2 text-xs text-gray-500 single-channal">
-                <div class="w-1/4">
-                  <div>
-                    <div class="image-text flex items-center space-x-2">
-                      <img src="./images/facebook.png" class="h-7 w-7" />
-                      <div>facebook</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-3/4 flex space-x-20">
-                  <div class="w-1/4">3.4k</div>
-                  <div class="w-1/4 text-green-500">$3,450</div>
-                  <div class="w-1/4">340</div>
-                  <div class="w-1/4 text-blue-500">4.9%</div>
-                </div>
-              </div>
-              <div class="flex p-2 text-xs text-gray-500 single-channal">
-                <div class="w-1/4">
-                  <div>
-                    <div class="image-text flex items-center space-x-2">
-                      <img src="./images/github.png" class="h-7 w-7" />
-                      <div>github</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-3/4 flex space-x-20">
-                  <div class="w-1/4">3.4k</div>
-                  <div class="w-1/4 text-green-500">$3,450</div>
-                  <div class="w-1/4">340</div>
-                  <div class="w-1/4 text-blue-500">4.9%</div>
-                </div>
-              </div>
-            </div>
+            <table class="w-full">
+              <thead class="bg-gray-100 p-4 uppercase font-bold text-xs text-gray-500 text-left">
+                <tr >
+                  <th class="p-4">Source</t>
+                  <th>Visitors</th>
+                  <th>Revenues</th>
+                  <th>Sales</t>
+                  <th>Conversions</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="py-2"><div class="image-text flex items-center space-x-2">
+                    <img src="./images/youtube.png" class="h-7 w-7" />
+                    <div>YouTube</div>
+                  </div></td>
+                  <td>
+                    3.4k
+                  </td>
+                  <td>
+                    <div class=" text-green-500">$3,450</div>
+                  </td>
+                  <td>
+                    <div >340</div>
+                  </td>
+                  <td>
+                    <div class=" text-blue-500">4.9%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2"><div class="image-text flex items-center space-x-2">
+                    <img src="./images/github.png" class="h-7 w-7" />
+                    <div>Github</div>
+                  </div></td>
+                  <td>
+                    3.4k
+                  </td>
+                  <td>
+                    <div class=" text-green-500">$3,450</div>
+                  </td>
+                  <td>
+                    <div >340</div>
+                  </td>
+                  <td>
+                    <div class=" text-blue-500">4.9%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2"><div class="image-text flex items-center space-x-2">
+                    <img src="./images/instagram.png" class="h-7 w-7" />
+                    <div>Instagram</div>
+                  </div></td>
+                  <td>
+                    3.4k
+                  </td>
+                  <td>
+                    <div class=" text-green-500">$3,450</div>
+                  </td>
+                  <td>
+                    <div >340</div>
+                  </td>
+                  <td>
+                    <div class=" text-blue-500">4.9%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-2"><div class="image-text flex items-center space-x-2">
+                    <img src="./images/facebook.png" class="h-7 w-7" />
+                    <div>facebook</div>
+                  </div></td>
+                  <td>
+                    3.4k
+                  </td>
+                  <td>
+                    <div class=" text-green-500">$3,450</div>
+                  </td>
+                  <td>
+                    <div >340</div>
+                  </td>
+                  <td>
+                    <div class=" text-blue-500">4.9%</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <!-- card container end -->
